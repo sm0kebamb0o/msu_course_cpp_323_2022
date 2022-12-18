@@ -34,7 +34,6 @@ std::string print_graph(const IGraph& graph) {
   data_graph << "{\n\tdepth:" << graph.depth() << ",\n";
   data_graph << "\tvertices: { amount: " << vertices_depth.size()
              << ", distribution: [";
-
   bool is_first_iteration = true;
   for (int i = 0; i < vertices_depth.size(); ++i) {
     if (!is_first_iteration)
@@ -55,7 +54,6 @@ std::string print_graph(const IGraph& graph) {
     is_first_iteration = false;
   }
   data_graph << "}}\n}";
-
   return data_graph.str();
 }
 
